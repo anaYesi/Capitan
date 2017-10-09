@@ -1,0 +1,43 @@
+
+$primer-color:#eaa526;;
+$segundo-color:#313139;
+$textcolor:white;
+$alineacion-texto:left;
+.forma-li{
+	text-align: $alineacion-texto;
+	padding: 14px 16px;
+	margin:0px 5px 0px -40px;
+	background:$segundo-color;
+	border: 2px solid white;
+	color: white;
+}
+
+.navbar{
+	background:$primer-color;
+	a{
+	color:$textcolor;
+	}
+}
+.seccion1{
+	margin-top:10%;
+}
+ul{
+	list-style-type: none;
+}
+.prework, .quiz, .presentacion, .ejercicio{
+		@extend .forma-li;
+}
+.prework:hover, .quiz:hover, .presentacion:hover, .ejercicio:hover{
+	background:$primer-color;
+	
+}
+.texto{
+	text-align: $alineacion-texto;
+	font-weight: bold;
+}
+.capitan, h1, h4{
+	font-weight: 800;
+}
+h4{
+	font-size: 16px;
+}
